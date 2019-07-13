@@ -1,0 +1,11 @@
+> rsolve({T(n)=4*T(n/4) + n*log[2](n)},{T});
+> rsolve(T(n)=4*T(n/2) + n^2*log[2](n)^2,{T});
+> rsolve({T(n)=2*T(n/2) + n*log[2](log[2](n))},{T});
+> rsolve({T(n)=2*T(n/2) + n^2*log[2](log[2](n))},{T});
+> rsolve({T(n)=2*T(n/2) + n / log[2](n)},{T});
+> rsolve({T(n)=8*T(n/2) + n / log[2](n)},{T});
+> rsolve({T(n)=4*T(n/2) + n^2 / log[2](n)},{T});
+> rsolve({T(n)=8*T(n/2) + n^2 / log[2](n)},{T});
+> rsolve({T(n)=16*T(n/4) + n^3 / log[2](n)},{T});
+> rsolve({T(n)=2*T(n/2) + n / log[2](n)^2},{T});
+> rsolve({T(n)=4*T(n/2) + n^2 / log[2](n)^2},{T}).
