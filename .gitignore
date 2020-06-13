@@ -52,7 +52,7 @@ Mkfile.old
 dkms.conf
 
 # Microsft Office temp files
-~$*.*
+~*.*
 
 # JetBrains IDEA files
 .idea/
