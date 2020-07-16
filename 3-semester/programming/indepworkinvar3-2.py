@@ -7,12 +7,6 @@
 """
 
 
-def main():
-    search_string = input("Введите строку. ")
-    what_to_find = input("Что бы вы хотели найти? ")
-    all_occurrences(search_string, what_to_find)
-
-
 def all_occurrences(search_string, what_to_find):
     occurrence = search_string.find(what_to_find)
     if occurrence != -1:
@@ -30,6 +24,12 @@ def all_occurrences(search_string, what_to_find):
             print('Вхождение подстроки:', occurrence)
         else:
             print('Больше вхождений нет.')
+
+
+def main():
+    search_string = input("Введите строку. ")
+    what_to_find = input("Что бы вы хотели найти? ")
+    all_occurrences(search_string, what_to_find)
 
 
 main()
