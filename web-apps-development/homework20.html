@@ -1,0 +1,901 @@
+﻿<!DOCTYPE html><html data-lt-installed="true" class="no-touch"><head>
+<base href="https://kodaktor.ru/77479b9"><title>77479b9 @ Kod..r 3.1</title><link rel="shortcut icon" type="image/png" data-savepage-href="favicon.png?fresh_new" href="data:image/png;base64,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"><style data-savepage-href="/css/newhtmlcss1" type="text/css">:root {
+  --mycolor: #46b7ff;
+
+}
+
+#vwr {
+  display: block
+}
+
+#adder {
+  cursor:pointer; 
+}
+
+/*
+#adder {
+cursor:pointer;
+z-index:20000;
+padding: 0px;
+margin-top: -2px;  
+}
+
+*/
+
+#panes {
+  border: none!important;
+}
+
+
+
+html, body {
+	margin:0px;
+ 
+    background: #dee;
+ }
+ h1 {
+	margin: 1px;
+	font: normal 17px sans-serif;
+    height: 25px;
+ }
+ 
+ 
+ @media  only screen and (max-device-width: 700px)  {
+   
+    #horver {
+	    display: none;
+    }
+ }
+ 
+ 
+ h1 span {float: left;}
+ #src{ 
+		border: none;	 
+}
+
+
+
+
+.t {  }
+ 
+
+ 
+.no {
+	display: none;
+}
+
+
+#vwrcont {
+       height:350px; width: 99%;
+       display: none;
+}
+
+
+#shortlink {
+       font-family: monospace, courier!important;
+      
+}
+
+
+#validator {
+	margin-bottom: -7px;
+	cursor: pointer;
+}
+
+#boards img {
+	margin-bottom: -2px;
+}
+
+
+
+#h1 {
+	background: rgb(149, 212, 253);
+	border-radius: 100%;
+	padding-left: 7px;
+	text-decoration: none;
+	padding-bottom: 2px;
+	margin-bottom: 0px;
+}
+
+
+#wait {z-index:255;display:none;margin-left:5px; height:35px; position:absolute; bottom:280px; background:rgba(57,139,206,0.5);
+color:white; font: bold 30px sans-serif; text-align: center; width: 99%}
+
+
+
+
+
+#copyright {
+	position: absolute;
+	z-index: 111;
+	bottom: 1px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+
+#mobmore { font-size: 36px;
+	position: relative;
+	top: -5px;
+	margin-top: -7px;
+}
+
+
+
+.users {
+	position: absolute;
+	width: 100px;
+	font-size: 10px;
+	display: none;
+}
+.users#l0g {
+	right: 134px;
+	top:3px;
+}
+
+.users#pa5 {
+	right: 25px;
+	top:3px;
+	
+}
+#soff {
+	position: absolute;right: 4px; top:2px; cursor: pointer;
+	
+}
+
+#imp {
+	margin: 0px!important; padding: 0px!important;
+
+}
+
+
+
+
+#hint0 {position:absolute; left: 7px; top: 7px; display: none; z-index:10000; }
+#hint0_text {
+
+position: absolute;
+    left: 50%;
+    top: 35%;
+    font: bold 25px sans-serif;
+    height: 100px;
+    background: rgba(255,255,255,1);
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px
+}
+
+
+
+
+
+ 
+</style><style data-savepage-href="/css/newnavbar1" type="text/css">
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      nav {
+        height: 60px;
+        background: #232941;
+        color: #B9B9C8;
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-wrapper {
+        width: 960px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+/*
+      .nav-bar-right span {
+          margin-left: 30px;
+      }
+*/
+
+      .nav-bar-left {
+        display: flex;
+      }
+
+      .nav-bar-left span {
+          margin-right: 30px;
+      }
+
+      .nav-bar-left__left-sec {
+        margin-right: 50px;
+      }
+
+      .btn-reload {
+        margin-right: 20PX;
+      }
+
+
+.ton {
+    cursor: pointer;
+    color: #ded;
+    filter: saturate(12) drop-shadow(1px 1px 3px #ded) ;
+       
+   
+
+}
+
+      select {
+          position: relative;
+        padding-left: 7px;
+          top: -1px;
+          border: none;
+          background: transparent;
+          width: 70px;
+        color:#B9B9C8;
+        outline: none;
+          font: normal  14px sans-serif;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin-right: 60px; 
+   
+        border-radius: 0px !important;
+ 
+ 
+	 
+        background: /*savepage-url=/newdown.png*/ var(--savepage-url-5) 96% / 15% no-repeat;
+      }
+
+
+
+
+
+
+
+</style><script data-savepage-src="/lodash.min.js"></script><script data-savepage-src="/jq/jquery.js"></script><script data-savepage-src="/j/random"></script><script data-savepage-src="/j/time"></script><script data-savepage-src="/j/htmljs"></script><style data-savepage-href="/cm/lib/codemirror.css">/* BASICS */
+
+.CodeMirror {
+  /* Set height, width, borders, and global font properties here */
+  font-family: monospace;
+  height: 300px;
+  color: black;
+  direction: ltr;
+}
+
+/* PADDING */
+
+.CodeMirror-lines {
+  padding: 4px 0; /* Vertical padding around content */
+}
+.CodeMirror pre {
+  padding: 0 4px; /* Horizontal padding of content */
+}
+
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: white; /* The little square between H and V scrollbars */
+}
+
+/* GUTTER */
+
+.CodeMirror-gutters {
+  border-right: 1px solid #ddd;
+  background-color: #f7f7f7;
+  white-space: nowrap;
+}
+.CodeMirror-linenumbers {}
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+}
+
+.CodeMirror-guttermarker { color: black; }
+.CodeMirror-guttermarker-subtle { color: #999; }
+
+/* CURSOR */
+
+.CodeMirror-cursor {
+  border-left: 1px solid black;
+  border-right: none;
+  width: 0;
+}
+/* Shown when moving in bi-directional text */
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid silver;
+}
+.cm-fat-cursor .CodeMirror-cursor {
+  width: auto;
+  border: 0 !important;
+  background: #7e7;
+}
+.cm-fat-cursor div.CodeMirror-cursors {
+  z-index: 1;
+}
+.cm-fat-cursor-mark {
+  background-color: rgba(20, 255, 20, 0.5);
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+}
+.cm-animate-fat-cursor {
+  width: auto;
+  border: 0;
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+  background-color: #7e7;
+}
+@-moz-keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+@-webkit-keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+@keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+
+/* Can style cursor different in overwrite (non-insert) mode */
+.CodeMirror-overwrite .CodeMirror-cursor {}
+
+.cm-tab { display: inline-block; text-decoration: inherit; }
+
+.CodeMirror-rulers {
+  position: absolute;
+  left: 0; right: 0; top: -50px; bottom: -20px;
+  overflow: hidden;
+}
+.CodeMirror-ruler {
+  border-left: 1px solid #ccc;
+  top: 0; bottom: 0;
+  position: absolute;
+}
+
+/* DEFAULT THEME */
+
+.cm-s-default .cm-header {color: blue;}
+.cm-s-default .cm-quote {color: #090;}
+.cm-negative {color: #d44;}
+.cm-positive {color: #292;}
+.cm-header, .cm-strong {font-weight: bold;}
+.cm-em {font-style: italic;}
+.cm-link {text-decoration: underline;}
+.cm-strikethrough {text-decoration: line-through;}
+
+.cm-s-default .cm-keyword {color: #708;}
+.cm-s-default .cm-atom {color: #219;}
+.cm-s-default .cm-number {color: #164;}
+.cm-s-default .cm-def {color: #00f;}
+.cm-s-default .cm-variable,
+.cm-s-default .cm-punctuation,
+.cm-s-default .cm-property,
+.cm-s-default .cm-operator {}
+.cm-s-default .cm-variable-2 {color: #05a;}
+.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}
+.cm-s-default .cm-comment {color: #a50;}
+.cm-s-default .cm-string {color: #a11;}
+.cm-s-default .cm-string-2 {color: #f50;}
+.cm-s-default .cm-meta {color: #555;}
+.cm-s-default .cm-qualifier {color: #555;}
+.cm-s-default .cm-builtin {color: #30a;}
+.cm-s-default .cm-bracket {color: #997;}
+.cm-s-default .cm-tag {color: #170;}
+.cm-s-default .cm-attribute {color: #00c;}
+.cm-s-default .cm-hr {color: #999;}
+.cm-s-default .cm-link {color: #00c;}
+
+.cm-s-default .cm-error {color: #f00;}
+.cm-invalidchar {color: #f00;}
+
+.CodeMirror-composing { border-bottom: 2px solid; }
+
+/* Default styles for common addons */
+
+div.CodeMirror span.CodeMirror-matchingbracket {color: #0b0;}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}
+.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }
+.CodeMirror-activeline-background {background: #e8f2ff;}
+
+/* STOP */
+
+/* The rest of this file contains styles related to the mechanics of
+   the editor. You probably shouldn't touch them. */
+
+.CodeMirror {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.CodeMirror-scroll {
+  overflow: scroll !important; /* Things will break if this is overridden */
+  /* 30px is the magic margin used to hide the element's real scrollbars */
+  /* See overflow: hidden in .CodeMirror */
+  margin-bottom: -30px; margin-right: -30px;
+  padding-bottom: 30px;
+  height: 100%;
+  outline: none; /* Prevent dragging from highlighting the element */
+  position: relative;
+}
+.CodeMirror-sizer {
+  position: relative;
+  border-right: 30px solid transparent;
+}
+
+/* The fake, visible scrollbars. Used to force redraw during scrolling
+   before actual scrolling happens, thus preventing shaking and
+   flickering artifacts. */
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  position: absolute;
+  z-index: 6;
+  display: none;
+}
+.CodeMirror-vscrollbar {
+  right: 0; top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.CodeMirror-hscrollbar {
+  bottom: 0; left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.CodeMirror-scrollbar-filler {
+  right: 0; bottom: 0;
+}
+.CodeMirror-gutter-filler {
+  left: 0; bottom: 0;
+}
+
+.CodeMirror-gutters {
+  position: absolute; left: 0; top: 0;
+  min-height: 100%;
+  z-index: 3;
+}
+.CodeMirror-gutter {
+  white-space: normal;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -30px;
+}
+.CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: none !important;
+  border: none !important;
+}
+.CodeMirror-gutter-background {
+  position: absolute;
+  top: 0; bottom: 0;
+  z-index: 4;
+}
+.CodeMirror-gutter-elt {
+  position: absolute;
+  cursor: default;
+  z-index: 4;
+}
+.CodeMirror-gutter-wrapper ::selection { background-color: transparent }
+.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }
+
+.CodeMirror-lines {
+  cursor: text;
+  min-height: 1px; /* prevents collapsing before first draw */
+}
+.CodeMirror pre {
+  /* Reset some styles that the rest of the page might have set */
+  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+  border-width: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  line-height: inherit;
+  color: inherit;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-variant-ligatures: contextual;
+  font-variant-ligatures: contextual;
+}
+.CodeMirror-wrap pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+
+.CodeMirror-linebackground {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: 0;
+}
+
+.CodeMirror-linewidget {
+  position: relative;
+  z-index: 2;
+  padding: 0.1px; /* Force widget margins to stay inside of the container */
+}
+
+.CodeMirror-widget {}
+
+.CodeMirror-rtl pre { direction: rtl; }
+
+.CodeMirror-code {
+  outline: none;
+}
+
+/* Force content-box sizing for the elements where we expect it */
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.CodeMirror-measure {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.CodeMirror-cursor {
+  position: absolute;
+  pointer-events: none;
+}
+.CodeMirror-measure pre { position: static; }
+
+div.CodeMirror-cursors {
+  visibility: hidden;
+  position: relative;
+  z-index: 3;
+}
+div.CodeMirror-dragcursors {
+  visibility: visible;
+}
+
+.CodeMirror-focused div.CodeMirror-cursors {
+  visibility: visible;
+}
+
+.CodeMirror-selected { background: #d9d9d9; }
+.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }
+.CodeMirror-crosshair { cursor: crosshair; }
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }
+
+.cm-searching {
+  background-color: #ffa;
+  background-color: rgba(255, 255, 0, .4);
+}
+
+/* Used to force a border model for a node */
+.cm-force-border { padding-right: .1px; }
+
+@media print {
+  /* Hide the cursor when printing */
+  .CodeMirror div.CodeMirror-cursors {
+    visibility: hidden;
+  }
+}
+
+/* See issue #2901 */
+.cm-tab-wrap-hack:after { content: ''; }
+
+/* Help users use markselection to safely style text background */
+span.CodeMirror-selectedtext { background: none; }
+</style><script data-savepage-src="/cm/lib/codemirror.js"></script><script data-savepage-src="/cm/mode/xml/xml.js"></script><script data-savepage-src="/cm/mode/javascript/javascript.js"></script><script data-savepage-src="/cm/mode/css/css.js"></script><script data-savepage-src="/cm/mode/htmlmixed/htmlmixed.js"></script><script data-savepage-src="/cm/addon/edit/matchbrackets.js"></script><script data-savepage-src="/cm/addon/selection/active-line.js"></script><script data-savepage-src="/emmet.js"></script><script data-savepage-src="/jq/splitter-152.js"></script><script data-savepage-src="/clipboard.min.js"></script><style data-savepage-href="/html_splitter.css" type="text/css" media="all">		html, body
+		{
+			margin: 0;			/* Remove body margin/padding */
+			padding: 0;
+			overflow: hidden;	/* Remove scroll bars on browser window */
+		}
+		#header { padding: 1em; }
+		
+		#panes {
+			border: 3px solid #669;
+			min-width: 500px;	/* Splitter can't be too thin ... */
+			min-height: 300px;	/* ... or too flat */
+			height: 100%;
+		}
+		
+		#topper {				/* Top nested in right pane */
+			height: 300px;		/* Initial height */
+			min-height: 75px;	/* Minimum height */
+			overflow: hidden;
+		}
+		#vwrcont {
+			min-height: 100px;
+		}
+		
+		/* Splitbar styles; these are the default class names */
+		
+		.ui-state-default { background-color: rgb(214, 226, 235) }
+		.ui-state-hover { background-color: #bbf }
+		.ui-state-highlight { background-color: #68f }
+		.ui-state-error { background-color: #eaa }
+		
+		.splitter-pane {
+			overflow: auto;
+		}
+		.splitter-bar-vertical {
+			width: 15px;
+			background-image: /*savepage-url=jq/nav.svg*/ var(--savepage-url-6);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.splitter-bar-vertical-docked {
+			width: 10px;
+			background-image: /*savepage-url=jq/vdockbar-trans.gif*/ url();
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.splitter-bar-horizontal {
+			height: 15px;
+			background-image: /*savepage-url=jq/nav.svg*/ var(--savepage-url-6);
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: row-resize;
+		}
+		.splitter-bar-horizontal-docked {
+			height: 10px;
+			background-image: /*savepage-url=jq/hdockbar-trans.gif*/ url();
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: row-resize;
+		}
+		.splitter-bar.ui-state-highlight {
+			opacity: 0.7;
+		}
+		.splitter-iframe-hide {
+			visibility: hidden;
+		}</style><style type="text/css">/*
+ * contextMenu.js v 1.4.0
+ * Author: Sudhanshu Yadav
+ * s-yadav.github.com
+ * Copyright (c) 2013 Sudhanshu Yadav.
+ * Dual licensed under the MIT and GPL licenses
+**/
+
+.iw-contextMenu {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.10) !important;
+    border: 1px solid #c8c7cc !important;
+    border-radius: 11px !important;
+    display: none;
+    z-index: 1000000132;
+    max-width: 300px !important;
+    width: auto !important;
+}
+
+.dark-mode .iw-contextMenu,
+.TnITTtw-dark-mode.iw-contextMenu,
+.TnITTtw-dark-mode .iw-contextMenu {
+    border-color: #747473 !important;
+}
+
+.iw-cm-menu {
+    background: #fff !important;
+    color: #000 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow: visible !important;
+}
+
+.dark-mode .iw-cm-menu,
+.TnITTtw-dark-mode.iw-cm-menu,
+.TnITTtw-dark-mode .iw-cm-menu {
+    background: #525251 !important;
+    color: #FFF !important;
+}
+
+.iw-curMenu {
+}
+
+.iw-cm-menu li {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif !important;
+    list-style: none !important;
+    padding: 10px !important;
+    padding-right: 20px !important;
+    border-bottom: 1px solid #c8c7cc !important;
+    font-weight: 400 !important;
+    cursor: pointer !important;
+    position: relative !important;
+    font-size: 14px !important;
+    margin: 0 !important;
+    line-height: inherit !important;
+    border-radius: 0 !important;
+    display: block !important;
+}
+
+.dark-mode .iw-cm-menu li, .TnITTtw-dark-mode .iw-cm-menu li {
+    border-bottom-color: #747473 !important;
+}
+
+.iw-cm-menu li:first-child {
+    border-top-left-radius: 11px !important;
+    border-top-right-radius: 11px !important;
+}
+
+.iw-cm-menu li:last-child {
+    border-bottom-left-radius: 11px !important;
+    border-bottom-right-radius: 11px !important;
+    border-bottom: none !important;
+}
+
+.iw-mOverlay {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0px !important;
+    left: 0px !important;
+    background: #FFF !important;
+    opacity: .5 !important;
+}
+
+.iw-contextMenu li.iw-mDisable {
+    opacity: 0.3 !important;
+    cursor: default !important;
+}
+
+.iw-mSelected {
+    background-color: #F6F6F6 !important;
+}
+
+.dark-mode .iw-mSelected, .TnITTtw-dark-mode .iw-mSelected {
+    background-color: #676766 !important;
+}
+
+.iw-cm-arrow-right {
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 5px solid transparent !important;
+    border-bottom: 5px solid transparent !important;
+    border-left: 5px solid #000 !important;
+    position: absolute !important;
+    right: 5px !important;
+    top: 50% !important;
+    margin-top: -5px !important;
+}
+
+.dark-mode .iw-cm-arrow-right, .TnITTtw-dark-mode .iw-cm-arrow-right {
+    border-left-color: #FFF !important;
+}
+
+.iw-mSelected > .iw-cm-arrow-right {
+}
+
+/*context menu css end */</style><style type="text/css">@-webkit-keyframes load4 {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
+
+@keyframes load4 {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}</style><style type="text/css">/* This is not a zero-length file! */</style>
+<style id="savepage-cssvariables">
+  :root {
+    --savepage-url-5: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAYAAAFLtZyyAAAABGdBTUEAALGPC/xhBQAAAMdJREFUGBlj3LXr1JT///9lM+zceeI/IwMQ7Nx58iczM4MuI0gEJAAHMAGwsl27Tlz7/59BEybLxmbOCmODaaDqNJgApllAGSYmhkImJiYWAZgqEM3IyLjP1dViApOrq8lHZmZGO6jkezc3c2dkhQy7dp3sRBZg/P//P/Pu3ae2AWk3ZAks7Fnu7hbpYG+AJPfsOa3079+/U0CNwsiKgW65xcnJaWFrq/ceJA7XAFMEDLwEYODNZ2Rk+PP/P6O7u7v5PpgciAYA/F1KAYhO1xEAAAAASUVORK5CYII=);
+    --savepage-url-6: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjVweCIgaGVpZ2h0PSI1cHgiIHZpZXdCb3g9IjAgMCAyNSA1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGcgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI0My4wMDAwMDAsIC03NDAuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI0My4wMDAwMDAsIDc0MC4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxjaXJjbGUgY3g9IjEyLjUiIGN5PSIyLjUiIHI9IjIuNSI+PC9jaXJjbGU+CiAgICAgICAgICAgICAgICA8Y2lyY2xlIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuNTAwMDAwLCAyLjUwMDAwMCkgc2NhbGUoLTEsIDEpIHRyYW5zbGF0ZSgtMi41MDAwMDAsIC0yLjUwMDAwMCkgIiBjeD0iMi41IiBjeT0iMi41IiByPSIyLjUiPjwvY2lyY2xlPgogICAgICAgICAgICAgICAgPGNpcmNsZSB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMi41MDAwMDAsIDIuNTAwMDAwKSBzY2FsZSgtMSwgMSkgdHJhbnNsYXRlKC0yMi41MDAwMDAsIC0yLjUwMDAwMCkgIiBjeD0iMjIuNSIgY3k9IjIuNSIgcj0iMi41Ij48L2NpcmNsZT4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+);
+  }
+</style>
+<script id="savepage-shadowloader" type="application/javascript">
+  "use strict"
+  window.addEventListener("DOMContentLoaded",
+  function(event)
+  {
+    savepage_ShadowLoader(5);
+  },false);
+  function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
+</script>
+<meta name="savepage-url" content="https://kodaktor.ru/77479b9">
+<meta name="savepage-title" content="77479b9 @ Kod..r 3.1">
+<meta name="savepage-from" content="https://kodaktor.ru/77479b9">
+<meta name="savepage-date" content="Thu Jul 23 2020 21:16:56 GMT+0300 (Москва, стандартное время)">
+<meta name="savepage-state" content="Standard Items; Retain cross-origin frames; Merge CSS images; Remove unsaved URLs; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+<meta name="savepage-version" content="20.6">
+<meta name="savepage-comments" content="">
+  </head><body><nav><div class="nav-wrapper"><div class="nav-bar-left"><div class="nav-bar-left__left-sec"><span id="adder"><svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, 0.000000)" fill-rule="nonzero"><g transform="translate(4.000000, 0.000000)"><rect fill="#00B7FF" x="0" y="0" width="25" height="25" rx="12.5"></rect><g transform="translate(4.642857, 4.821429)" fill="#FFFFFF"><rect x="6.25" y="0" width="3.21428571" height="15.5357143"></rect><rect transform="translate(7.812500, 7.589286) rotate(90.000000) translate(-7.812500, -7.589286) " x="6.20535714" y="-0.178571429" width="3.21428571" height="15.5357143"></rect></g></g></g></g></svg></span></div><div class="nav-bar-left__right-sec"><span id="onthefly" class="ton" checked="1"><svg class="btn-reload" width="22px" height="25px" viewBox="0 0 22 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-83.000000, 0.000000)" fill="#B9B9C8"><g transform="translate(83.000000, 0.000000)"><path d="M19.3777987,6.7263256 C21.3380171,8.51218446 21.4212465,10.7705492 21.4285707,11.1991302 L21.4285707,13.5076948 C21.4292366,14.0404404 20.9618203,14.469649 20.4178331,14.4602365 C19.8991476,14.452079 19.4603623,14.0479704 19.4430505,13.5415796 L19.4430505,11.4915442 C19.4550356,11.2179551 19.5023099,9.46284368 18.0174977,8.09803588 C16.5826231,6.77903542 14.8008484,6.82296027 14.5012227,6.83488273 L6.13500503,6.83488273 L9.79376873,10.2823559 C10.2372149,10.7034069 10.2032573,11.3698096 9.79376873,11.708031 C9.45152951,11.9910325 8.89355972,12.0054649 8.48606866,11.708031 C6.66367808,9.99119687 4.84195333,8.27436278 3.01956275,6.55690119 C2.96563011,6.50607386 2.7452387,6.28519462 2.72925866,5.93630582 C2.71061527,5.5365897 2.9749518,5.2761781 3.01956275,5.23350824 L8.26967226,0.285687772 C8.67982666,-0.101478395 9.34632757,-0.0889284383 9.72319021,0.285687772 C10.0734195,0.633949074 10.083407,1.20559961 9.72319021,1.58147081 L6.14232922,4.9561542 C9.02672673,4.95301671 11.9104584,4.94987922 14.7941901,4.94674173 C15.2855764,4.95364421 17.5227822,5.03647392 19.3777987,6.7263256 Z M11.6341369,13.2915749 C11.9770419,13.0085733 12.5350117,12.9941409 12.9425028,13.2915749 C14.7642275,15.0084089 16.5866181,16.725243 18.4083428,18.4420771 C18.4629413,18.4941594 18.6833327,18.7144112 18.6993128,19.0639275 C18.7179562,19.4630161 18.4529538,19.7234277 18.4083428,19.7660976 L13.1582333,24.7145455 C12.7487448,25.1017117 12.0822439,25.0885342 11.7053812,24.7145455 C11.3544861,24.3662842 11.3451644,23.7946337 11.7053812,23.418135 L15.2862422,20.0434516 C12.4018447,20.0465891 9.51744718,20.0503541 6.6337155,20.0534916 C6.14232922,20.0459616 3.90578922,19.9631319 2.05077272,18.2732802 C0.0898884447,16.4874214 0.00665906118,14.2296841 7.1049128e-07,13.8011031 L7.1049128e-07,11.491911 C-0.000665124577,10.9591654 0.466751093,10.5299569 1.01073834,10.5393693 C1.52875803,10.5475268 1.96754334,10.9516354 1.98552088,11.4580262 L1.98552088,13.5080616 C1.97353585,13.7816507 1.92626156,15.5373896 3.41107377,16.9015699 C4.84594834,18.2205704 6.62705715,18.177273 6.92734876,18.1653506 L15.2929006,18.1653506 L11.6341369,14.7172499 C11.1906907,14.2961989 11.2253141,13.6297962 11.6341369,13.2915749 Z"></path></g></g></g></svg></span><span><svg width="28px" height="25px" viewBox="0 0 28 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-126.000000, 0.000000)" fill="#B9B9C8"><g transform="translate(126.000000, 0.000000)"><path id="Combined-Shape" d="M2,0 L26,0 C27.1045695,-2.02906125e-16 28,0.8954305 28,2 L28,23 C28,24.1045695 27.1045695,25 26,25 L2,25 C0.8954305,25 1.3527075e-16,24.1045695 0,23 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z M5,5 C3.8954305,5 3,5.8954305 3,7 L3,18 C3,19.1045695 3.8954305,20 5,20 L23,20 C24.1045695,20 25,19.1045695 25,18 L25,7 C25,5.8954305 24.1045695,5 23,5 L5,5 Z"></path></g></g></g></svg></span></div></div><div class="nav-bar-right"><span> <select id="codes"><option value="/g/code_javascript">JavaScript</option><option value="/g/code_scripthigh">high</option><option value="/g/code_jquery">jQuery</option><option value="/g/code_xhtml">XHTML</option><option value="/g/code_svg">SVG</option><option value="/g/code_html5">HTML5</option></select></span><span> <select id="insnippet"><option value="<script>{
+
+}</script>">script</option><option value="() => {
+
+}">arrow</option><option value="/**/">/**/</option><option value="λ">λ</option><option value="<div></div>">div</option><option value="<p></p>">p</option><option value="≺/≻">pseudo tags</option><option value="<a target=&quot;_blank&quot; href=&quot;...&quot;>..</a>">a</option><option value="<style></style>">style</option><option value="<link rel=&quot;stylesheet&quot; href=&quot;/css/board0&quot;>">link css</option><option value="<link rel=&quot;stylesheet&quot; href=&quot;/css/board2&quot;>">link css lect</option><option value="<link rel=&quot;stylesheet&quot; href=&quot;/css/highcss_atom&quot;>">highcss_atom</option><option value="<base target=&quot;_blank&quot;>">target</option><option value="<script>let myURL='https://kodaktor.ru/node'</script><script src=&quot;/j/redir&quot;></script>">redir 3</option><option value="<script src=&quot;/j/redir&quot;></script>">redir /</option><option value="<link rel=&quot;stylesheet&quot; href=&quot;/css/textmate_scheme&quot;>">link css textmate</option><option value="<pre class=&quot;task&quot;></pre>">pre task</option><option value="<pre><code>...</code></pre>">pre code</option><option value="<pre></pre>">pre</option><option value="<script src=&quot;/Autolinker.min.js&quot;></script><script>document.body.innerHTML = Autolinker.link( document.body.innerHTML );</script>">script autolinker</option><option value="<script src=&quot;/j/out&quot;></script>">script Out</option><option value="<script src=&quot;/j/clicker&quot;></script>">script Clicker</option><option value="new Clicker(async () => {
+
+}, caption='Щёлкни');">new  Clicker</option><option value="<script src=&quot;/j/timer&quot;></script>">script Timer</option><option value="new Timer(5)
+.then(() => Out.log(5));">new  Timer</option><option value="<script src=&quot;/j/kodaktor&quot;></script><script>Kodaktor.mimeJS();</script>">script Kodaktor</option><option value="<script src=&quot;/high.js&quot;></script><script>hljs.initHighlightingOnLoad();</script>">script high</option><option value="<script src=&quot;/j/dblttl&quot;></script>">duplicate title to h2</option><option value="<script src=&quot;/j/barewebber&quot;></script>">bare webpage redirect</option><option value="<script src=&quot;/socket.io/socket.io.js&quot;></script><script src=&quot;/j/barewebber&quot;></script>">bare webpage redirect plus sockets</option><option value="<script src=&quot;/j/time&quot;></script>">script Time</option><option value="<script src=&quot;/j/pause&quot;></script>">script  pause</option><option value="<script src=&quot;/j/random&quot;></script>">script gossrandom</option><option value="<h4 id=&quot;author&quot; title=&quot;GossJS&quot;>Иван Иванов</h4>">z7a</option><option value="<meta name=&quot;author&quot; content=&quot;Alan Turing ©2017&quot;>">meta author</option><option value="<meta charset=&quot;utf-8&quot;>">meta charset</option><option value="<meta http-equiv=&quot;refresh&quot; content=&quot;15&quot;>">refresh</option><option value="<meta http-equiv=&quot;refresh&quot; content=&quot;15;URL=http://...&quot;>">redirect</option><option value="<meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;>">viewport</option><option value="((d,s)=>d.body.appendChild(d.createElement(s)).appendChild(d.createTextNode(d.querySelector(`title`).textContent)))(document,`h2`);">duplicateTitle</option><option value="(()=>{})();">self invoking</option><option value="(d=>{})(document);">self invok w/param</option><option value="const z=((c=0)=>()=>++c)();">closure min</option><option value="document.querySelector(``)">querySelector</option><option value="window.addEventListener(`load`,e=>console.log(e.target.location));">eventListener</option><option value="setTimeout(()=>{  }, 12000);">timeout</option><option value="try{} catch(e){}">try</option><option value="console.clear();">console.clear</option><option value="console.log();">console.log</option><option value="document.writeln();">document.write</option><option value="console.log=what=>document.write(what)">console.doc</option><option value="<script src=&quot;/vue.js&quot;></script>">Vue</option><option value="<script src=&quot;/babel.min.js&quot;></script>">Babel 6.26.0</option><option value="<script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js&quot;></script>">Babel 6.26.0 CDN</option><option value="<script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;></script>">jQuery 3.3</option><option value="<link rel=&quot;stylesheet&quot; href=&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css&quot; ></option><script src=&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js&quot;></script>">jQ UI</option><option value="<link rel=&quot;stylesheet&quot; href=&quot;bootstrap-local/bootstrap.min.css&quot;><link rel=&quot;stylesheet&quot; href=&quot;bootstrap-local/bootstrap-theme.min.css&quot;><script src=&quot;bootstrap-local/bootstrap.min.js&quot;></script>">Bootstrap local</option><option value="<a target=&quot;_blank&quot; href=&quot;http://www.layoutit.com/build_v2&quot;>Layoutit! - Bootstrap editor</a>">Layoutit! - Bootstrap editor</option><option value="<script src=&quot;//ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js&quot;></script>">Knockout</option><option value="<a target=&quot;_blank&quot; href=&quot;http://jsonlint.com/&quot;>JSON validate</a>">JSON validator</option><option value="<a target=&quot;_blank&quot; href=&quot;http://refresh-sf.com/yui/&quot;>JS obfuscate</a>">JS obfuscator</option></select></span><span> <select id="operations"><option value="Обновить">Refresh</option><option value="Логин">Login</option><option value="Выход">Logout</option><option value="Редактировать">Edit</option><option value="Переключить">Toggle</option><option value="Просмотреть">View</option><option value="Просмотр страницы">Page</option><option value="Просмотр без HTTPS">Page no HTTPS</option><option value="Переименовать">Rename</option><option value="Новая доска">Blank board</option><option value="Новая приватная">Private board</option><option value="G-линк">View link</option><option value="QR-код">QR-code</option><option value="Свежее">Latest</option><option value="Очистить">Erase</option><option value="Скачать">Download</option><option value="О проекте">Version</option><option value="JS">JS</option><option value="koo">koo</option><option value="En / Ru">En / Ru</option></select></span></div></div></nav><div id="panes" style="position: relative; height: 906px;" class="splitter ui-widget ui-widget-content"><div id="topper" class="splitter-pane" style="position: absolute; z-index: 1; left: 0px; width: 600px; height: 906px;"><form id="fsaver" action="/download/" enctype="multipart/form-data" method="post"><textarea id="src" title="text/html" name="src" v="77479b9" style="height: 300px; display: none;" lang="ru"></textarea><div class="CodeMirror cm-s-default CodeMirror-wrap" style="width: 600px; height: 906px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 154px; left: 426px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 955px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 30px; margin-bottom: -17px; border-right-width: 13px; min-height: 955px; padding-right: 17px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"><span><span>​</span>x</span><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>52</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 396px; top: 150px; height: 15px;"> </div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tag">&lt;html&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"> <span class="cm-tag">&lt;head&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag">&lt;title&gt;</span>FRMW-005<span class="cm-tag">&lt;/title&gt;&lt;meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">"utf-8"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">   <span class="cm-tag">&lt;script</span> <span class="cm-attribute">src</span>=<span class="cm-string">"https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.15/vue.js"</span><span class="cm-tag">&gt;&lt;/script&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">   <span class="cm-tag">&lt;script</span> <span class="cm-attribute">src</span>=<span class="cm-string">"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"</span><span class="cm-tag">&gt;&lt;/script&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">  <span class="cm-tag">&lt;/head&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">  <span class="cm-tag">&lt;body&gt;</span></span></pre></div><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag">&lt;h4</span> <span class="cm-attribute">id</span>=<span class="cm-string">"author"</span> <span class="cm-attribute">title</span>=<span class="cm-string">"GossJS"</span><span class="cm-tag">&gt;</span>Pavel Moiseenko<span class="cm-tag">&lt;/h4&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag">&lt;script</span> <span class="cm-attribute">src</span>=<span class="cm-string">"/j/dblttl"</span><span class="cm-tag">&gt;&lt;/script&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag">&lt;div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"mix"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">      <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"r"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        R:</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag">&lt;input</span> <span class="cm-attribute">v-model.number</span>=<span class="cm-string">"valueR"</span> <span class="cm-attribute">@change</span>=<span class="cm-string">"changeRGB"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"r1"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"number"</span> <span class="cm-attribute">min</span>=<span class="cm-string">"0"</span> <span class="cm-attribute">max</span>=<span class="cm-string">"255"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag">&lt;input</span> <span class="cm-attribute">v-model.number</span>=<span class="cm-string">"valueR"</span> <span class="cm-attribute">@change</span>=<span class="cm-string">"changeRGB"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"r2"</span>  <span class="cm-attribute">type</span>=<span class="cm-string">"range"</span>  <span class="cm-attribute">min</span>=<span class="cm-string">"0"</span> <span class="cm-attribute">max</span>=<span class="cm-string">"255"</span> <span class="cm-attribute">step</span>=<span class="cm-string">"1"</span> <span class="cm-tag">&gt;&lt;br&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">      <span class="cm-tag">&lt;/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">      <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"g"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        G:</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag">&lt;input</span> <span class="cm-attribute">v-model.number</span>=<span class="cm-string">"valueG"</span> <span class="cm-attribute">@change</span>=<span class="cm-string">"changeRGB"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"g1"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"number"</span> <span class="cm-attribute">min</span>=<span class="cm-string">"0"</span> <span class="cm-attribute">max</span>=<span class="cm-string">"255"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag">&lt;input</span> <span class="cm-attribute">v-model.number</span>=<span class="cm-string">"valueG"</span> <span class="cm-attribute">@change</span>=<span class="cm-string">"changeRGB"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"g2"</span>  <span class="cm-attribute">type</span>=<span class="cm-string">"range"</span>  <span class="cm-attribute">min</span>=<span class="cm-string">"0"</span> <span class="cm-attribute">max</span>=<span class="cm-string">"255"</span> <span class="cm-attribute">step</span>=<span class="cm-string">"1"</span> <span class="cm-tag">&gt;&lt;br&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">      <span class="cm-tag">&lt;/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">      <span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"b"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        B:</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag">&lt;input</span> <span class="cm-attribute">v-model.number</span>=<span class="cm-string">"valueB"</span> <span class="cm-attribute">@change</span>=<span class="cm-string">"changeRGB"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"b1"</span> <span class="cm-attribute">type</span>=<span class="cm-string">"number"</span> <span class="cm-attribute">min</span>=<span class="cm-string">"0"</span> <span class="cm-attribute">max</span>=<span class="cm-string">"255"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        <span class="cm-tag">&lt;input</span> <span class="cm-attribute">v-model.number</span>=<span class="cm-string">"valueB"</span> <span class="cm-attribute">@change</span>=<span class="cm-string">"changeRGB"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"b2"</span>  <span class="cm-attribute">type</span>=<span class="cm-string">"range"</span>  <span class="cm-attribute">min</span>=<span class="cm-string">"0"</span> <span class="cm-attribute">max</span>=<span class="cm-string">"255"</span> <span class="cm-attribute">step</span>=<span class="cm-string">"1"</span> <span class="cm-tag">&gt;&lt;br&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">      <span class="cm-tag">&lt;/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag">&lt;/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag">&lt;script&gt;</span>{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">      <span class="cm-variable">console</span>.<span class="cm-property">clear</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">      <span class="cm-variable">console</span>.<span class="cm-property">clear</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">31</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">  <span class="cm-keyword">new</span> <span class="cm-variable">Vue</span>({</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">32</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-property">el</span>: <span class="cm-variable">mix</span>,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">33</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">     <span class="cm-property">data</span>: {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">34</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">         <span class="cm-property">valueR</span>: <span class="cm-number">251</span>,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">35</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">          <span class="cm-property">valueG</span>: <span class="cm-number">230</span>,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">36</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">          <span class="cm-property">valueB</span>: <span class="cm-number">255</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">37</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">        },</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">38</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">     <span class="cm-property">created</span>: <span class="cm-keyword">function</span>() {<span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'body'</span>).<span class="cm-property">style</span>.<span class="cm-property">cssText</span> = <span class="cm-string">'background: rgb(251,230,255)'</span>;},</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">39</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">     <span class="cm-property">methods</span>: {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">40</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">     <span class="cm-property">changeRGB</span>: <span class="cm-keyword">function</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">41</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">42</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">       <span class="cm-keyword">let</span> <span class="cm-def">r</span> = <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'#r1'</span>).<span class="cm-property">value</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">43</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">       <span class="cm-keyword">let</span> <span class="cm-def">g</span> = <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'#g1'</span>).<span class="cm-property">value</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">44</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">       <span class="cm-keyword">let</span> <span class="cm-def">b</span> = <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'#b1'</span>).<span class="cm-property">value</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">45</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">       <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'body'</span>).<span class="cm-property">style</span>.<span class="cm-property">cssText</span> = <span class="cm-string-2">`background: rgb(${</span><span class="cm-variable-2">r</span>},<span class="cm-property">$</span>{<span class="cm-variable">g</span>},<span class="cm-property">$</span>{<span class="cm-variable">b</span>})<span class="cm-string-2">`; //`</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">46</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">     }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">47</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">48</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    });</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">49</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    }<span class="cm-tag">&lt;/script&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">50</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"> <span class="cm-tag">&lt;/body&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">51</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tag">&lt;/html&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">52</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 955px;"></div><div class="CodeMirror-gutters" style="height: 968px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div></form></div><div class="splitter-bar splitter-bar-vertical ui-state-default" unselectable="on" style="position: absolute; user-select: none; z-index: 100; cursor: e-resize; left: 600px; height: 906px;"><a href="javascript:void(0)" accesskey="" tabindex="0"></a></div><div id="vwrcont" class="splitter-pane" style="position: absolute; z-index: 1; left: 615px; width: 1305px; height: 906px; display: block;"><iframe srcdoc="<!DOCTYPE html><html data-lt-installed=&quot;true&quot;><head>
+<base href=&quot;https://kodaktor.ru/77479b9&quot;>
+    <title>FRMW-005</title><meta charset=&quot;utf-8&quot;>
+   <script data-savepage-src=&quot;https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.15/vue.js&quot;></script>
+   <script data-savepage-src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js&quot;></script>
+  
+<style id=&quot;savepage-cssvariables&quot;>
+  :root {
+  }
+</style>
+            </head>
+  <body style=&quot;background: rgb(251, 177, 255) none repeat scroll 0% 0%;&quot;>
+    <h4 id=&quot;author&quot; title=&quot;GossJS&quot;>Pavel Moiseenko</h4>
+    <script data-savepage-src=&quot;/j/dblttl&quot;></script><h1>FRMW-005</h1>
+    <div id=&quot;mix&quot;>
+      <div class=&quot;r&quot;>
+        R:
+        <input id=&quot;r1&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;255&quot; value=&quot;251&quot;>
+        <input id=&quot;r2&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;255&quot; step=&quot;1&quot; value=&quot;251&quot;><br>
+      </div>
+      <div class=&quot;g&quot;>
+        G:
+        <input id=&quot;g1&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;255&quot; value=&quot;177&quot;>
+        <input id=&quot;g2&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;255&quot; step=&quot;1&quot; value=&quot;177&quot;><br>
+      </div>
+      <div class=&quot;b&quot;>
+        B:
+        <input id=&quot;b1&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;255&quot; value=&quot;255&quot;>
+        <input id=&quot;b2&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;255&quot; step=&quot;1&quot; value=&quot;255&quot;><br>
+      </div>
+    </div>
+    <script></script>
+ 
+
+</body></html>" data-savepage-sameorigin="" id="vwr" border="0" name="viewer" data-savepage-src="" src="" data-savepage-key="0-0" width="100%" height="100%" frameborder="0"></iframe></div></div><script type="text/javascript" data-savepage-src="/js/jquery.qrcode.min.js"></script><script type="text/javascript" data-savepage-src="/socket.io/socket.io.js"></script><div id="wait">Минуточку!</div></body></html>
