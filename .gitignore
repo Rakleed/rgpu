@@ -55,9 +55,9 @@ dkms.conf
 ~*.*
 
 # JetBrains IDEA files
-.idea/
+*.idea/
 
 # Texmaker files
-.aux
-.log
-.synctex.gz
+*.aux
+*.log
+*.synctex.gz
