@@ -60,4 +60,4 @@ dkms.conf
 # Texmaker files
 *.aux
 *.log
-*.synctex.gz
+*.*.gz
