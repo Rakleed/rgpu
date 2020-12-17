@@ -1,0 +1,159 @@
+% "Лабораторная работа № 7"
+
+\documentclass[a4paper,12pt]{article} % тип документа
+
+% report, book
+
+% Русский язык
+
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+
+
+\usepackage{wasysym}
+
+\usepackage{hyperref}
+
+%Заговолок
+\author{Моисеенко П. А., 1 гр. 2 подгр.}
+\title{Создание матриц средствами \LaTeX}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\newpage
+\section{Диактрические знаки}
+\subsection{Надстрочные}
+$$ \dot{x}=0 $$\\
+$$ \tilde{a}=\bar{b} $$
+$$ \tilde{a}=\overline{bcde} $$
+широкая тильда\\
+$$ \widetilde{afgh}=\overline{bcde} $$
+
+многоточие $\cdots$
+
+\subsection{Веткторы}
+Вектор a имеет координаты (0;3;4)
+
+$$ \overrightarrow{a}(0;3;4) $$
+
+Запись вектора жирным шрифтом, а не стрелкой сверху
+$$ \overrightarrow{a}=\mathbf{a} $$
+
+\subsection{Фигурная скобка}
+$$ \underbrace{1+2+\cdots+n}=N $$
+
+$$ \underbrace{1+2+\cdots+n}_{n}=N $$
+
+\begin{equation}
+\underbrace{1+2+\cdots+n}=N
+\end{equation}
+
+\begin{equation}
+\underbrace{1+2+\cdots+n}_{n}=N
+\end{equation}
+
+\begin{equation}
+\overbrace{1+2+\cdots+n}^{n}=N
+\end{equation}
+
+\subsection{Написание условия перехода над знаком}
+команда \textbf{stackrel}\\
+Например.\\
+$$ (x-1)(x+1)>0 \stackrel{x>0}{\longleftrightarrow}(x-1)>0 $$
+
+\subsection{Буквы других алфавитов}
+$$ \sin \alpha=0 $$
+$$ \omega=\frac{2\pi}{T} $$
+непривычный вид\\
+$\epsilon$ \\
+$\phi$\\\\
+как в учебнике\\
+$\varepsilon$\\
+$\varphi$
+
+\subsection{Математические шрифты}
+много\\
+один из них $\mathbf{mathbb}$
+находится во вкладке Математика/Математические шрифты\\
+$$ x \in R $$
+$$ x \in \mathbb{R} $$
+
+\subsection{Кириллические символы}
+используется команда \textbf{text}
+$$ m_{\text{груза}}=15~{\text{кг}} $$
+Для пробела между обозначениями величины и её численными значением необходимо использовать тильду
+
+\section{Выравнивание формул}
+окружение \textbf{aligned}\\
+определяет выравнивание амперсант \&
+
+\section{Группировка формул}
+\begin{equation}
+\begin{aligned}
+4&\times a=8 \\
+-5&\times b=10 \\
+-10&\times c=110 \\
+\end{aligned}
+\end{equation}
+ 
+\subsection{Системы уравнений}
+$$ \left \{
+\begin{aligned}
+4&\times a=8 \\
+-5&\times b=10 \\
+-10&\times c=110 \\
+\end{aligned} \right. $$
+
+$$ \left.
+\begin{aligned}
+4&\times a=8 \\
+-5&\times b=10 \\
+-10&\times c=110 \\
+\end{aligned} \right \} $$
+
+$$ \left.
+\begin{aligned}
+4&\times a=8 \\
+-5&\times b=10 \\
+-10&\times c=110 \\
+\end{aligned} \right \} \Rightarrow -12ab=24 $$
+
+\section{Матрицы}
+Создаются за счёт окружения \textbf{matrix}
+
+\subsection{Матрица в круглых скобках}
+$$ \begin{pmatrix}
+a_{11}& a_{12}& a_{13} \\
+a_{21}& a_{22}& a_{23} \\
+a_{31}& a_{32}& a_{33}
+\end{pmatrix} $$
+
+\subsection{Матрица в квадратных скобках}
+$$ \begin{bmatrix}
+a_{11}& a_{12}& a_{13} \\
+a_{21}& a_{22}& a_{23} \\
+a_{31}& a_{32}& a_{33}
+\end{bmatrix} $$
+
+\subsection{Определитель}
+
+$$ \begin{Vmatrix}
+a_{11}& a_{12}& a_{13} \\
+a_{21}& a_{22}& a_{23} \\
+a_{31}& a_{32}& a_{33}
+\end{Vmatrix} $$
+
+$$ \begin{vmatrix}
+a_{11}& a_{12}& a_{13} \\
+a_{21}& a_{22}& a_{23} \\
+a_{31}& a_{32}& a_{33}
+\end{vmatrix} $$
+
+\end{document}
