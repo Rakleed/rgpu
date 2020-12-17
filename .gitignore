@@ -55,7 +55,7 @@ dkms.conf
 ~*.*
 
 # JetBrains IDEA files
-*.idea/
+.idea/
 
 # Texmaker files
 *.aux
