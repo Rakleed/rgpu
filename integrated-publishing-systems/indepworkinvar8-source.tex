@@ -1,0 +1,47 @@
+% "Инвариативная самостоятельная работа № 8"
+
+\documentclass[a4paper,12pt]{article} % тип документа -- лсит А4 с 12 шрифтом текста
+
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % математические символы, формулы и т. д.
+
+\usepackage{wasysym}
+
+\usepackage{hyperref}
+
+\author{Моисеенко П. А., 1 гр. 2 подгр.} % имя автора
+\title{Таблица команд} % название документа
+\date{\today} % дата создани документа
+
+\begin{document}
+\maketitle
+\newpage
+\section*{Команды для набора матриц в \LaTeX}
+\begin{tabular}{ l | r }
+  \textbf{Назначение команды}	& \textbf{Вид (написание) команды} \\ \hline
+  точка над символом			& dot \\ \hline
+  тильда над символом			& tilde \\ \hline
+  черта над символами			& overline \\ \hline
+  широкая тильда				& wildtilde \\ \hline
+  многоточие					& cdots \\ \hline
+  вектор						& overrightarrow \\ \hline
+  математический символ, жирный	& mathbf \\ \hline
+  фигурная скобка снизу			& underbrace \\ \hline
+  фигурная скобка сверху		& overbrace \\ \hline
+  условие над знаком			& stackrel \\ \hline
+  стрелка влево-вправо			& longleftrightarrow \\ \hline
+  альфа							& alpha \\ \hline
+  омега							& omega \\ \hline
+  пси							& varpsi \\ \hline
+  эпсилон						& varepsilon \\ \hline
+  вхождение						& in \\ \hline
+  выравнивание					& begin {align}, end{align} \\ \hline
+  фантомная скобка				& left., right. \\ \hline
+  матрица в круглых скобках		& begin {pmatrix}, end{pmatrix} \\ \hline
+  матрица в квадратных скобках	& begin {bmatrix}, end{bmatrix} \\ \hline
+  определитель матрицы			& begin {vmatrix}, end{vmatrix}
+\end{tabular}
+\end{document}
