@@ -1,0 +1,31 @@
+% "Инвариативная самостоятельная работа № 9"
+
+\documentclass[a4paper,12pt]{article} % тип документа -- лсит А4 с 12 шрифтом текста
+
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % математические символы, формулы и т. д.
+
+\usepackage{wasysym}
+
+\usepackage{hyperref}
+
+\author{Моисеенко П. А., 1 гр. 2 подгр.} % имя автора
+\title{Интегралы и дифференциалы в \LaTeX} % название документа
+\date{\today} % дата создани документа
+
+\begin{document}
+\maketitle
+\newpage
+\section*{Таблица интегралов и дифференциалов}
+\begin{tabular}{ l | r }
+  \textbf{Интегралы}							 & \textbf{Дифференциалы} \\ \hline
+  $ \int Cf(x)dx=C\int f(x)dx $					 & $ d(c)=0,c=const $ \\ \hline
+  $ \int [f(x)+g(x)]dx=\int f(x)dx+\int g(x)dx $ & $ d(x^n)=nx^{n-1}dx $ \\ \hline
+  $ f(ax+b)dx=\frac{1}{a}F(ax+b)+C $			 & $ d(a^x)=a^x*\ln adx $ \\ \hline
+  $ \int 0dx=C $								 & $ d(e^x)=e^xdx $ \\ \hline
+  $ \int adx=ax+C $								 & $ d(\ln x)=\frac{dx}{x} $ \\ \hline
+\end{tabular}
+\end{document}
