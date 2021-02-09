@@ -40,7 +40,7 @@
 *.dSYM/
 *.su
 *.idb
-*.pdb
+# *.pdb — Unity files
 
 # Kernel Module Compile Results
 *.mod*
