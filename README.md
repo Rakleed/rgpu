@@ -2,8 +2,8 @@
 Выложены задания нескольких типов:
 * `lab` — лабораторные работы.
 * `indepwork` — самостоятельные работы.
-* `indepworkinvar` — инвариативные самостоятельные работы.
-* `indepworkvar` — вариативные самостоятельные работы.
+* `indepworkinvar` — инвариативные самостоятельные работы.
+* `indepworkvar` — вариативные самостоятельные работы.
 * `homework` — домашние работы.
 * `practical` — практические работы.
 * `lecture` — лекции.
@@ -31,7 +31,7 @@
 * `algorithms-and-complexity-analysis` — «Алгоритмы и анализ сложности».
 * `computers-and-peripherals` — «ЭВМ и периферийные устройства».
 * `english` — «Иностранный язык».
-* `fundamentals-of-probability-theory` — «Основы теории вероятности».
+* `fundamentals-of-probability-theory` — «Основы теории вероятности».
 * `history` — «История».
 * `information-technology` — «Информационные технологии».
 * `mathematical-logic-and-theory-of-algorithms` — «Математическая логика и теория алгоритмов».
@@ -61,7 +61,7 @@
 * `database` — «Базы данных».
 * `english` — «Профессионально-ориентированная устная коммуникация на иностранном языке».
 * `it-optimization-problem` — «Информационные технологии в решении задач оптимизации».
-* `maths` — «Математика».
+* `maths` — «Математика».
 * `physical-education` — «Физическая культура и спорт».
 * `programming` — «Программирование».
 * `web-apps-development` — «Серверные веб-технологии».
@@ -75,7 +75,7 @@
 * `it-management` — «IT-менеджмент».
 * `it-study-foreign-languages` — «Информационные технологии в изучении иностранных языков».
 * `networks-and-telecommunications` — «Сети и телекоммуникации».
-* `physical-education` — «	Физическая культура и спорт».
+* `physical-education` — «Физическая культура и спорт».
 * `presentation-and-publication-information` — «Техника и технологии представления и публикации информации».
 * `programming` — «Программирование».
 * `software-project-management` — «Управление программными проектами».
