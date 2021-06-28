@@ -17,7 +17,6 @@
 
 """
 
-
 import math
 
 
@@ -50,7 +49,7 @@ def square_sequence_digit(n):
     return digit
 
 
-if __name__ == "__main__":
+if __name__ == "__lab1__":
     square_sequence_digit(1)
     square_sequence_digit(2)
     square_sequence_digit(7)
