@@ -1,6 +1,6 @@
 """
     Автор: Моисеенко Павел, подгруппа № 2.
-    ИСР 3.1. Задание: используя свободные источники (bn.ru, avito.ru и
+    ИСР 4.1. Задание: используя свободные источники (bn.ru, avito.ru и
     т. д.), собрать данные о ценах на недвижимость, выставленную на
     продажу в разных районах города. Преобразовать данные в формат
     csv. Разработать скрипт для визуализации данных, используя
@@ -15,7 +15,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-with open("indepworkinvar3-1-prices.csv") as file:
+with open("indepworkinvar4-1-prices.csv") as file:
     csv_reader = csv.reader(file, delimiter=";")
     line_number = 0
     for row in csv_reader:
