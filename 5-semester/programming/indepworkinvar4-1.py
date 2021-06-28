@@ -26,7 +26,7 @@ with open("indepworkinvar4-1-prices.csv") as file:
             print(f"Квартира за {row[0]} руб. находится в {row[1]}.")
 
 
-data = np.genfromtxt("prices.csv", delimiter=";", skip_header=1,
+data = np.genfromtxt("indepworkinvar4-1-prices.csv", delimiter=";", skip_header=1,
                      names=["Price", "District"], dtype=None, encoding=None)
 fig, ax1 = plt.subplots()
 ax1.scatter(x=data["Price"], y=data["District"], color="b",
