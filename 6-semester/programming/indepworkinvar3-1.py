@@ -14,7 +14,7 @@ import math
 import pytest
 
 
-def square_eq(a, b, c):
+def quadratic_equation(a, b, c):
     d = b ** 2 - 4 * a * c
 
     if d < 0:
@@ -30,19 +30,19 @@ def main():
     a = int(input("Введите а: "))
     b = int(input("Введите b: "))
     c = int(input("Введите c: "))
-    print(square_eq(a, b, c))
+    print(quadratic_equation(a, b, c))
 
 
 def test_1():
-    assert square_eq(4, -4, 1) == [0.5, None]
+    assert quadratic_equation(4, -4, 1) == [0.5, None]
 
 
 def test_2():
-    assert square_eq(1, -5, 6) == [3.0, 2.0]
+    assert quadratic_equation(1, -5, 6) == [3.0, 2.0]
 
 
 def test_3():
-    assert square_eq(1, 2, 3) is None
+    assert quadratic_equation(1, 2, 3) is None
 
 
 main()
